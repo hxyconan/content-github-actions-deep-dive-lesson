@@ -48,9 +48,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: build
-    # permissions:
-    #   packages: write
-
+    permissions:
+      packages: write
     steps:
       - name: Create release
         id: create_release
